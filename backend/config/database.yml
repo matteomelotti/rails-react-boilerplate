@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: postgres
+  password: mysecretpassword
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  # database: start2impact_development_master
+  database: rails-react-boilerplate
+  # database: start2impact_development_staging_2
